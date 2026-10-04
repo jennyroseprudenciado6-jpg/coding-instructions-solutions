@@ -1,0 +1,11 @@
+const [first, second] = [10, 20];
+const [a, b, ...rest] = [1, 2, 3, 4];
+const user = { name: 'Rin', age: 21 };
+const book = { title: 'JS', pages: 120 };
+const [name, age] = [user.name, user.age];
+const { title, pages } = book;
+const add = (x, y) => x + y;
+const multiply = (x, y) => x * y;
+const log = (value) => console.log(value);
+log(`${name} ${age} ${title} ${pages}`);
+console.log(add(first, second), multiply(a, b), rest.length);
